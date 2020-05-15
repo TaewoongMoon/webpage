@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <title>나만의 쇼핑몰 페이지</title>
+<style>
+    .imagesize{
+        width: 600px;
+        height: 300px;
+        background-image: url('https://byline.network/wp-content/uploads/2019/11/Apple_16-inch-MacBook-Pro_thum-e1583391159938-1280x720.jpg');
+        background-position: center;
+        background-size: cover;
+        border-radius: 20px;
+        text-align: center;
+        padding-top: 100px;
+    }
+    .wrap{
+        margin: 20px auto;
+        width: 600px;
+    }
+    .small-font{
+        font-size: 20px;
+    }
+    .large-font{
+        font-size: 35px;
+    }
+    * {
+	font-family: 'Nanum Gothic', sans-serif;
+    }    
+    </style>
+    <script> /* order = 주문 관련 함수 */
+        function order() {
+            alert('주문이 완료되었습니다.');
+    }
+    </script>
+</head>
+<body>
+<div>
+    <div class= "imagesize wrap">
+    </div>
+    <div class= "wrap">
+        <p class="large-font"><span style = "color:red">Product Type: </span> MacBook <p1 class ="small-font"> 가격: 2,800,000 won </p1></p>
+    </div>
+    <div class= "wrap">
+        <p>2.6 GHz 6코어 Intel Core i7 프로세서 최대 4.5GHZ Turbo Boost AMD Radeo Pro 5300 M(4GB GDDR6) 512 GB SSD 터치바, 터치 ID</p>
+        <p>애플 코리아 정발입니다. 맥북프로 16인치 스페이스 그레이 색상입니다. 제조일자는 2020년 4월입니다. 제가 조급 급해서 ㅠㅠ 280에 드릴게요</p>
+    </div>
+    <div class= "wrap">
+        <h1>Order</h1>
+    </div>
+<form>
+    <div class="form-group wrap">
+        <label for="text"> 주문자 성함: </label>
+        <input type="text" class="form-control" placeholder="주문자 성함">
+    </div>
+    <div class="form-group wrap">
+        <label for ="text"> 수량: </label>
+        <select id ="text" class="form-control">
+            <option selected>선택하시오</option>
+            <option> 한개 </option>
+            <option> 두개 </option>
+            <option> 세개 </option>
+            <option> 네개 </option>
+        </select>
+    </div>
+    <div class="form-group wrap">
+        <label for = "text"> 주소: </label>
+        <input type ="text" class= "form-control" placeholder="주소">
+    </div>
+    <div class="form-group wrap">
+        <label for = "text"> 전화번호: </label>
+        <input type = "text" class= "form-control" placeholder="전화번호">
+    </div>
+    <div class= "wrap">
+        <button onclick = "order()" type="button" class= "btn btn-outline-secondary btn-lg"> 주문하기 </button>
+    </div> 
+</form>
+</div>
+</body>
+</head>    
+</html>
