@@ -1,0 +1,62 @@
+/*페이지 전체 적용*/
+*{
+    font-family: 'Dosis', sans-serif;
+  }
+  
+  
+  header{
+    background-color: burlywood;
+    padding:5px;            /*내부에 여백 만들기 (몸집이 커짐)*/
+    width:90%;               /*너비의 90%에 적용*/
+    height:150px;
+    margin: 10px auto;
+  }
+
+  li{
+    display: inline-block;
+    margin-top: 40px;             /*상단으로부터 거리 조절*/
+    padding-right: 50px;          /*메뉴 간 간격 띄어쓰기*/
+  }
+  
+  header{
+    position:fixed;
+    top:0px;
+    right:0px;
+    left:0px;
+  }
+  #logo-image{
+    float:left;
+  }
+  
+  .menu{
+    float:right;
+    padding-right:30px;
+    list-style: none;
+  }
+
+  .menu a{
+    font-size:35px;
+    text-decoration: none;
+    color:#141a66;
+  }
+  
+  .menu a:hover{
+    color: black;
+  }
+  
+  /*   여기까지가 헤더.  */
+  
+  .home-imagesize{
+    margin-top: 250px;
+    margin-bottom: 100px;
+    text-align:center;
+
+  }
+
+  .large-font{
+      font-size: 30px;
+  }
+
+  .wrap{
+      text-align:center;
+  }
